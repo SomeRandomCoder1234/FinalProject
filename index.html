@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Final Project</title>
+    </head>
+    <body>
+        <img id = "bigimage" src = "https://media.istockphoto.com/id/494243946/photo/axis-deer-buck.jpg?s=612x612&w=0&k=20&c=9T4V_zIwzeM0Qz6LoF20GrQ1QfmHewWqsYLoqtJ7Enk=" style = "border-style: solid; border-color:red;" width = "100%">
+        <p>
+            <button onclick = "changeImage(1)" style = "background-color:white;border-style:solid;border-color:white;">
+                <img src = "https://media.istockphoto.com/id/494243946/photo/axis-deer-buck.jpg?s=612x612&w=0&k=20&c=9T4V_zIwzeM0Qz6LoF20GrQ1QfmHewWqsYLoqtJ7Enk=" height = "100px;" width = "75px;">
+            </button>
+            <button onclick = "changeImage(2)" style = "background-color:white;border-style:solid;border-color:white;">
+                <img src = "https://media.istockphoto.com/id/1401355117/photo/armadillo.jpg?s=612x612&w=0&k=20&c=3bhx4j7xiIiX_A3_CdOAEPz8P2yY6QftGXUo4DDMZ_Y=" height = "100px;" width = "75px;">
+            </button>
+            <button onclick = "changeImage(3)" style = "background-color:white;border-style:solid;border-color:white;">
+                <img src = "https://www.usatoday.com/gcdn/authoring/authoring-images/2023/12/20/USAT/71991411007-1683171699.jpg?crop=8255,4645,x0,y429&width=3200&height=1801&format=pjpg&auto=webp" height = "100px;" width = "75px;">
+            </button>
+            <button onclick = "changeImage(4)" style = "background-color:white;border-style:solid;border-color:white;">
+                <img src = "https://tpwd.texas.gov/huntwild/wildlife/wildlife-trails/resources/heart-of-texas-east/ringtail.jpg" height = "100px;" width = "75px;">
+            </button>
+        </p>
+        <script>
+            function changeImage(image) {
+                if (image == 1) {
+                    document.getElementById("bigimage").src = "https://media.istockphoto.com/id/494243946/photo/axis-deer-buck.jpg?s=612x612&w=0&k=20&c=9T4V_zIwzeM0Qz6LoF20GrQ1QfmHewWqsYLoqtJ7Enk="
+                }
+                else if (image == 2) {
+                    document.getElementById("bigimage").src = "https://media.istockphoto.com/id/1401355117/photo/armadillo.jpg?s=612x612&w=0&k=20&c=3bhx4j7xiIiX_A3_CdOAEPz8P2yY6QftGXUo4DDMZ_Y="
+                }
+                else if (image == 3) {
+                    document.getElementById("bigimage").src = "https://www.usatoday.com/gcdn/authoring/authoring-images/2023/12/20/USAT/71991411007-1683171699.jpg?crop=8255,4645,x0,y429&width=3200&height=1801&format=pjpg&auto=webp"
+                }
+                else {
+                    document.getElementById("bigimage").src = "https://tpwd.texas.gov/huntwild/wildlife/wildlife-trails/resources/heart-of-texas-east/ringtail.jpg"
+                }
+            }
+        </script>
+    </body>
+</html>
